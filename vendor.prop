@@ -84,6 +84,7 @@ wifi.direct.interface=p2p0
 # Q
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+debug.sf.enable_gl_backpressure=1
 
 ro.vr_display.service=true
 persist.irqbalance.enable=true
