@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2022-2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libtinyxml2_shim",
+    srcs: ["libtinyxml2/XMLDocument.cpp"],
+    shared_libs: ["libtinyxml2"],
+    system_ext_specific: true,
+    vendor_available: true,
+}
