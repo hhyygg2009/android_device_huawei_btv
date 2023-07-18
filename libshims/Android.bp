@@ -11,3 +11,13 @@ cc_library_shared {
     srcs: ["libtinyxml2/XMLDocument.cpp"],
     shared_libs: ["libtinyxml2"],
 }
+
+cc_library {
+    name: "libbinder_shim",
+    shared_libs: ["libbinder", "libutils"],
+    srcs: [
+        "libbinder/IServiceManager.cpp",
+        "libbinder/PermissionCache.cpp",
+    ],
+    vendor: true
+}
