@@ -183,7 +183,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+# IMS
+PRODUCT_BOOT_JARS += \
+    hwEmui \
+    hwframework \
+    hwTelephony-common
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/privapp-permissions-com.huawei.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.huawei.ims.xml
     
+PRODUCT_PACKAGES += \
+    TelephonyOverlayHuawei
+  
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
@@ -286,7 +298,8 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     liblog_vendor \
-    libtinyxml2_shim
+    libtinyxml2_shim \
+    libshim_emcom
     
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
