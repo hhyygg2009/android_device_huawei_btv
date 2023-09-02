@@ -1,5 +1,5 @@
 # vr_daemon daemon
-type vr_daemon, domain, domain_deprecated;
+type vr_daemon, domain;
 type vr_daemon_exec, exec_type, file_type;
 
 # Started by init

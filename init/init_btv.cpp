@@ -31,6 +31,8 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <stdio.h>
+#include <sys/system_properties.h>
+
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -38,6 +40,17 @@
 #include "util.h"
 
 #include "init_hi3650.h"
+
+#define PROP_VALUE_MAX  92
+
+
+using namespace android::init;
+
+std::string property_get(const char* name) {
+    char value[PROP_VALUE_MAX] = {0};
+    __system_property_get(name, value);
+    return value;
+}
 
 std::string replaceStrChar(std::string str, const std::string& replace, char ch) {
 

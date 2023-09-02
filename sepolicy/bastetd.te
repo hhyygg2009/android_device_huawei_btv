@@ -1,5 +1,5 @@
 # bastetd daemon
-type bastetd, domain, domain_deprecated;
+type bastetd, domain;
 type bastetd_exec, exec_type, file_type;
 
 # Started by init

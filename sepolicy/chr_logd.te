@@ -1,5 +1,5 @@
 # chr_logd daemon
-type chr_logd, domain, domain_deprecated;
+type chr_logd, domain;
 type chr_logd_exec, exec_type, file_type;
 
 # Started by init

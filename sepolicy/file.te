@@ -34,11 +34,11 @@ type sysfs_huawei_sensor, fs_type, sysfs_type;
 
 type sysfs_framebuffer, fs_type, sysfs_type;
 
-type sysfs_tp_color, fs_type, sysfs_type;
+#type sysfs_tp_color, fs_type, sysfs_type;
 
-type sysfs_vibrator, fs_type, sysfs_type;
+#type sysfs_vibrator, fs_type, sysfs_type;
 
-type sysfs_touchscreen, fs_type, sysfs_type;
+#type sysfs_touchscreen, fs_type, sysfs_type;
 
 type sysfs_fingerprint, fs_type, sysfs_type;
 

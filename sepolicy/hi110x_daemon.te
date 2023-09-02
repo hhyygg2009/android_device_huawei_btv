@@ -1,5 +1,5 @@
 # hi110x_daemon daemon
-type hi110x_daemon, domain, domain_deprecated;
+type hi110x_daemon, domain;
 type hi110x_daemon_exec, exec_type, file_type;
 
 # Started by init

@@ -76,7 +76,7 @@ BACKLIGHT_PATH := /sys/class/leds/lcd_backlight0/brightness
 # CMHW
 BOARD_HARDWARE_CLASS := \
     $(LOCAL_PATH)/cmhw \
-    hardware/cyanogen/cmhw
+    hardware/lineage/lineagehw
     
 ### FONTS
 EXTENDED_FONT_FOOTPRINT := true
@@ -135,7 +135,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_hi3650
 # RIL
 BOARD_PROVIDES_RILD := true
 BOARD_PROVIDES_LIBRIL := true
-TARGET_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
+#TARGET_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 BOARD_RIL_CLASS := ../../../device/huawei/btv/ril
 PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := proprietary

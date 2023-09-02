@@ -113,7 +113,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint sensor
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/native_packages.zip:$(TARGET_COPY_OUT_VENDOR)/etc/native_packages.xml
+    $(LOCAL_PATH)/prebuilts/native_packages.zip:$(TARGET_COPY_OUT_VENDOR)/etc/native_packages.zip
     
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
@@ -150,12 +150,12 @@ PRODUCT_PACKAGES += \
     libshim_skia \
     libshim_ui
     
-# adb as root
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0 \
-    security.perf_harden=0 \
-    ro.allow.mock.location=1
+## adb as root
+#ADDITIONAL_DEFAULT_PROPERTIES += \
+#    ro.secure=0 \
+#    ro.adb.secure=0 \
+#    security.perf_harden=0 \
+#    ro.allow.mock.location=1
 
 # USB
 PRODUCT_PACKAGES += \
@@ -168,5 +168,5 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)

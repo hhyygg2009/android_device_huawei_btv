@@ -1,5 +1,5 @@
 # hwcamcfgsvr daemon
-type hwcamcfgsvr, domain, domain_deprecated;
+type hwcamcfgsvr, domain;
 type hwcamcfgsvr_exec, exec_type, file_type;
 
 # Started by init
