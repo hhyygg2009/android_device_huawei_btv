@@ -54,8 +54,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/prebuilts/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
- PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/topazhp.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/topazhp.cfg \
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/prebuilts/topazhp.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/topazhp.cfg \
     $(LOCAL_PATH)/prebuilts/vdec_atlas.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/vdec_atlas.cfg
 
 # GPS
@@ -234,6 +234,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-impl \
     android.hardware.power.stats@1.0-service.mock
+    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/pwrlog.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/pwrlog.cfg \
+    $(LOCAL_PATH)/prebuilts/perfgenius_boost_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_boost_policy.xml \
+    $(LOCAL_PATH)/prebuilts/perfgenius_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_config.xml \
+    $(LOCAL_PATH)/prebuilts/perfgenius_mode_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_mode_policy.xml
     
 # Ramdisk
 PRODUCT_PACKAGES += \

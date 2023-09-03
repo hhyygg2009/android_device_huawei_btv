@@ -223,6 +223,24 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.huawei.hardware.perfgenius</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPerfGenius</name>
+            <instance>perfgenius</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.huawei.hardware.iawareperf</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IUniPerf</name>
+            <instance>uniperf</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.huawei.hardware.power</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -319,6 +337,24 @@
         <version>1.0</version>
         <interface>
             <name>IDisplayEngineWrapper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.huawei.hardware.graphics.gpucommon</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGpuCommon</name>
+            <instance>gpucommon</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.huawei.hardware.graphics.mediacomm</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IMediaComm</name>
             <instance>default</instance>
         </interface>
     </hal>
