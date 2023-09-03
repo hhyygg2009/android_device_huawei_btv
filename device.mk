@@ -235,9 +235,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2-impl \
     android.hardware.power.stats@1.0-service.mock
     
-# Properties
--include $(LOCAL_PATH)/system_prop.mk
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.hi3650 \
