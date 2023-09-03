@@ -155,7 +155,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/native_packages.zip:$(TARGET_COPY_OUT_VENDOR)/etc/native_packages.zip
+    $(LOCAL_PATH)/prebuilts/native_packages.bin:$(TARGET_COPY_OUT_VENDOR)/etc/native_packages.bin
     
 # Gralloc
 PRODUCT_PACKAGES += \
