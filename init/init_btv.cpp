@@ -53,6 +53,7 @@ void property_override_4x(char const product_prop[], char const system_prop[], c
 }
 
 static void set_model(const char *model) {
+    property_override("ro.treble.enabled", "false");
     property_override("ro.hw.oemName", model);
     property_override("ro.build.product", model);
     property_override_4x("ro.product.model", "ro.product.system.model", "ro.product.vendor.model", "ro.product.odm.model", model);
