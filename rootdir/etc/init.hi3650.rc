@@ -297,8 +297,6 @@ on fs
     wait /dev/block/platform/hi_mci.0/by-name
     mount_all /vendor/etc/fstab.hi3650 --early
     
-    exec - root root -- /system/bin/sh /system/etc/init.d/hw_on
-
     restorecon /splash2
 
     mkdir /splash2/log 0775 system log
