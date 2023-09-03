@@ -1080,6 +1080,21 @@ service sysinit /system/bin/sysinit
     oneshot
     disabled
     
+ service isplogcat /vendor/bin/isplogcat
+    class late_start
+    user root
+    group system
+    disabled
+    seclabel u:r:hisilogcat:s0
+    writepid /dev/cpuset/system-background/tasks
+    
+service emcomd /system/bin/emcomd
+    class main
+    socket emcomd stream 0600 system system
+    user root
+    group root system
+    seclabel u:r:emcomd:s0
+    
 on property:ro.config.hw_emcom=true
     start emcomd
     
