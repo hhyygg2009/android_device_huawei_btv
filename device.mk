@@ -285,7 +285,8 @@ PRODUCT_PACKAGES += \
     
 # Shims
 PRODUCT_PACKAGES += \
-    liblog_vendor
+    liblog_vendor \
+    libtinyxml2_shim
     
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
