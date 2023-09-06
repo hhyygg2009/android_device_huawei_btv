@@ -195,6 +195,8 @@ PRODUCT_COPY_FILES += \
     
 PRODUCT_PACKAGES += \
     TelephonyOverlayHuawei
+    
+PRODUCT_ENFORCE_RRO_TARGETS := *
   
 # Keymaster
 PRODUCT_PACKAGES += \
