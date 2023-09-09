@@ -147,6 +147,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
     
+PRODUCT_PACKAGES += \
+    libdng_sdk.vendor \
+    libstdc++.vendor
+    
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
