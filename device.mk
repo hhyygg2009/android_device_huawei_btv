@@ -312,7 +312,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     liblog_vendor \
     libtinyxml2_shim \
-    libtinyxml2_shim_sys
+    libtinyxml2_shim.vendor
     
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
