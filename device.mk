@@ -314,7 +314,8 @@ PRODUCT_PACKAGES += \
     libtinyxml2_shim \
     libtinyxml2_shim.vendor \
     libui_shim \
-    libbinder_shim
+    libbinder_shim \
+    libshim_ui
     
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
