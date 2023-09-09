@@ -140,6 +140,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
     
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl
+    
+PRODUCT_PACKAGES += \
+    Snap
+    
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \

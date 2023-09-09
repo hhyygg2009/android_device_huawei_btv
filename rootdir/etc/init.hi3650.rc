@@ -1001,6 +1001,11 @@ on charger
     
 # Start service here
 
+service CameraDaemon /vendor/bin/CameraDaemon hi3650 BTV
+    class main
+    user media
+    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm system
+
 service ril-daemon /vendor/bin/hw/rild
     disabled
     class core
