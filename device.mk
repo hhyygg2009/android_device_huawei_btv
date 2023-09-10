@@ -262,9 +262,9 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/pwrlog.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/pwrlog.cfg \
-    $(LOCAL_PATH)/prebuilts/perfgenius_boost_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_boost_policy.xml \
     $(LOCAL_PATH)/prebuilts/perfgenius_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_config.xml \
-    $(LOCAL_PATH)/prebuilts/perfgenius_mode_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_mode_policy.xml
+    $(LOCAL_PATH)/prebuilts/perfgenius_event_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_event_policy.xml \
+    $(LOCAL_PATH)/prebuilts/perfgenius_scenario_policy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfgenius_scenario_policy.xml
     
 # Ramdisk
 PRODUCT_PACKAGES += \

@@ -8,64 +8,57 @@
  */
 -->
 
-<!--
- **************           使用说明         *************
-例：如果当前调试config.cpp里面的配置项为latencyDdr和eas
-修改方式为：
-<config>
-    <perfRes name="latencyDdr" qosId="12">
-        <perfGroup name="defaultGroup" groupId ="0">
-            <avlMin>0</avlMin>
-            <avlMax>110</avlMax>
-            <baseMin>110</baseMin>
-            <baseMax>110</baseMax>
-            <levelMapping>
-                <level2Value name="levelToValue" level="100">
-                    <value>80000</value>
-                </level2Value>
-            </levelMapping>
-        </perfGroup>
-    </perfRes>
-
+<!--   eas:
     <perfRes name="eas" qosId="9">
-        <perfGroup name="defaultGroup" groupId ="0">
-            <avlMin>0</avlMin>
-            <avlMax>110</avlMax>
-            <baseMin>110</baseMin>
-            <baseMax>110</baseMax>
+        <perfGroup name="topApp" groupId="0">
+            <perfOperation>
+                <type>0</type>
+                <value>2362000</value>
+            </perfOperation>
         </perfGroup>
-        <levelMapping>
-            <level name="extreme_power_saving" levelId="-30">
-                <value>1</value>
-                <boost>0</boost>
-            </level>
-            <level name="normal" levelId="0">
-                <value>100</value>
-                <boost>0</boost>
-            </level>
-            <level name="performance_level_0" levelId="10">
-                <value>103</value>
-                <boost>0</boost>
-            </level>
-            <level name="performance_level_5" levelId="20">
-                <value>99</value>
-                <boost>0</boost>
-            </level>
-            <level name="performance_level_10" levelId="30">
-                <value>-99</value>
-                <boost>0</boost>
-            </level>
-            <level name="high_performance" levelId="40">
-                <value>50</value>
-                <boost>1</boost>
-            </level>
-            <level name="higher_performance" levelId="100">
-                <value>150</value>
-                <boost>1</boost>
-            </level>
-        </levelMapping>
+        <perfGroup name="boost" groupId="1">
+            <perfOperation>
+                <type>0</type>
+                <value>2362000</value>
+            </perfOperation>
+        </perfGroup>
+        <perfGroup name="foreground" groupId="2">
+            <perfOperation>
+                <type>0</type>
+                <value>2362000</value>
+            </perfOperation>
+        </perfGroup>
+        <perfGroup name="root" groupId="3">
+            <perfOperation>
+                <type>0</type>
+                <value>2362000</value>
+            </perfOperation>
+        </perfGroup>
+        <perfGroup name="background" groupId="4">
+            <perfOperation>
+                <type>0</type>
+                <value>2362000</value>
+            </perfOperation>
+        </perfGroup>
+        <perfGroup name="systemBackground" groupId="5">
+            <perfOperation>
+                <type>0</type>
+                <value>2362000</value>
+            </perfOperation>
+        </perfGroup>
+        <perfGroup name="keyBackground" groupId="6">
+            <perfOperation>
+                <type>0</type>
+                <value>2362000</value>
+            </perfOperation>
+        </perfGroup>
+        <perfGroup name="vip" groupId="7">
+            <perfOperation>
+                <type>0</type>
+                <value>2362000</value>
+            </perfOperation>
+        </perfGroup>
     </perfRes>
-</config>
 -->
 
 <!--
@@ -116,5 +109,7 @@
     isolationMinCpusB                = 43,
 -->
 
-<config>
-</config>
+
+
+<scenarioPolicy>
+</scenarioPolicy>
