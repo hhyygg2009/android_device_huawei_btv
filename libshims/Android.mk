@@ -23,3 +23,17 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libui_shim
+LOCAL_SRC_FILES := \
+    libui/Fence.cpp \
+    libui/GraphicBufferMapper.cpp
+LOCAL_SHARED_LIBRARIES := \
+    libui \
+    libutils
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MULTILIB := both
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_SHARED_LIBRARY)
