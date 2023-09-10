@@ -362,12 +362,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     sys.usb.configfs=1 \
     sys.usb.controller=ff100000.dwc3
     
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
-    $(LOCAL_PATH)/prebuilts/privapp-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions.xml \
-    $(LOCAL_PATH)/prebuilts/privapp-permissions-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-system.xml \
-    $(LOCAL_PATH)/prebuilts/whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/whitelist.xml
-    
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
