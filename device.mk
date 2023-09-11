@@ -315,7 +315,11 @@ PRODUCT_PACKAGES += \
     libtinyxml2_shim.vendor \
     libui_shim \
     libbinder_shim \
-    libshim_ui
+    libshim_ui \
+    libsensor_vendor \
+    libgui_vendor \
+    libshim_hwcam \
+    guivnd
     
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
