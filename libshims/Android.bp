@@ -5,6 +5,13 @@
 //
 
 cc_library_shared {
+    name: "liblog_vendor",
+    srcs: ["log.cpp"],
+    shared_libs: ["liblog"],
+    vendor: true,
+}
+
+cc_library_shared {
     name: "libtinyxml2_shim",
     host_supported: true,
     vendor_available: true,
@@ -26,6 +33,19 @@ cc_library_shared {
     name: "libshim_ui",
     srcs: ["libshim_ui.cpp"],
     shared_libs: ["libui", "libutils"],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "libui_shim",
+    srcs: [
+        "libui/Fence.cpp",
+        "libui/GraphicBufferMapper.cpp",
+    ],
+    shared_libs: [
+        "libui",
+        "libutils",
+    ],
     vendor: true,
 }
 
