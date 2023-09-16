@@ -19,11 +19,12 @@
 
 #include <string.h>
 
-static inline int BtmBypassExtraAclSetup() {
-	return 1;
-}
+//static inline int BtmBypassExtraAclSetup() {
+//	return 1;
+//}
 
-#define BTM_BYPASS_EXTRA_ACL_SETUP BtmBypassExtraAclSetup()
+//#define BTM_BYPASS_EXTRA_ACL_SETUP BtmBypassExtraAclSetup()
+#define BTM_BYPASS_EXTRA_ACL_SETUP TRUE
 
 #define BLE_INCLUDED TRUE
 #define BLE_VND_INCLUDED   TRUE
