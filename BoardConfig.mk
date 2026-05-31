@@ -98,7 +98,7 @@ HWUI_COMPILE_SYMBOLS := true
 # Kernel
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_BASE := 0x00478000
-BOARD_KERNEL_CMDLINE := loglevel=4 page_tracker=on slub_min_objects=12 unmovable_isolate1=2:192M,3:224M,4:256M androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE :=loglevel=7 page_tracker=on slub_min_objects=12 unmovable_isolate1=2:192M,3:224M,4:256M androidboot.selinux=permissive panic=30 ramoops.dump_oops=1  oops=panic panic_on_oops=1  softlockup_panic=1   hardlockup_panic=1  nmi_watchdog=1 ramoops.mem_address=0x8f000000 ramoops.mem_size=0x100000 ramoops.record_size=0x20000  ramoops.console_size=0x40000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x07b88000 --tags_offset 0x07588000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
